@@ -2,6 +2,8 @@
 
 require('should');
 
+
+
 var saySth = require('../source/say-sth');
 
 
@@ -12,7 +14,7 @@ describe('hello',  function () {
 
         var result = saySth.hello();
 
-        result.should.be.deepEqual( "Hello, World !" );
+        result.should.be.deepEqual( "<div>Hello, World !</div>" );
     });
 
 
@@ -20,7 +22,7 @@ describe('hello',  function () {
 
         var result = saySth.hello('JSDoc');
 
-        result.should.be.deepEqual( "Hello, JSDoc !" );
+        result.should.be.deepEqual( "<div>Hello, JSDoc !</div>" );
     });
 
 });
