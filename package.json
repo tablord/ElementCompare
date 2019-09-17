@@ -1,0 +1,31 @@
+{
+  "name": "elementcompare",
+  "version": "1.0.0",
+  "description": "a library that compares 2 DOM Elements and find significant differences and avoids non relevent differences like different orders of attributes or extra spaces in text nodes",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter list"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tablord/ElementCompare.git"
+  },
+  "keywords": [
+    "html",
+    "dom",
+    "compare"
+  ],
+  "author": "Marc Nicole",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tablord/ElementCompare/issues"
+  },
+  "homepage": "https://github.com/tablord/ElementCompare#readme",
+  "devDependencies": {
+    "mocha": "^6.2.0",
+    "test-runner": "^0.6.0"
+  },
+  "dependencies": {
+    "should": "^13.2.3"
+  }
+}
