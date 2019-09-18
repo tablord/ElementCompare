@@ -15,13 +15,7 @@
  *
  *     hello('JSDoc')    //  "Hello, JSDoc !"
  */
-
-const jsdom = require("jsdom");
-const { JSDOM } = jsdom;
-const dom = new JSDOM(`<!DOCTYPE html><p>Hello world</p>`);
-var window = dom.window;
-console.log(window.document.querySelector("p").textContent); // "Hello world"
-var $ = require('jquery')(window);
+require('./browserlike');
 
 exports.hello = function (name) {
 

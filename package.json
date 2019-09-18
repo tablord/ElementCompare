@@ -26,8 +26,14 @@
     "test-runner": "^0.6.0"
   },
   "dependencies": {
+    "browserify": "^16.5.0",
     "jquery": "^3.4.1",
     "jsdom": "^15.1.1",
     "should": "^13.2.3"
+  },
+  "browser": {
+    "./source/browserlike.js": false,
+    "jsdom": false,
+    "jquery": false
   }
 }
