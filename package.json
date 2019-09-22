@@ -23,16 +23,16 @@
   "homepage": "https://github.com/tablord/ElementCompare#readme",
   "devDependencies": {
     "mocha": "^6.2.0",
-    "test-runner": "^0.6.0"
-  },
-  "dependencies": {
+    "test-runner": "^0.6.0",
     "browserify": "^16.5.0",
-    "jquery": "^3.4.1",
-    "jsdom": "^15.1.1",
     "should": "^13.2.3"
   },
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "jsdom": "^15.1.1"    
+  },
   "browser": {
-    "./source/browserlike.js": false,
+    "./src/browserlike.js": false,
     "jsdom": false,
     "jquery": false
   }
