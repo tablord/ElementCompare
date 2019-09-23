@@ -190,5 +190,6 @@ ElementCompare.styles = function(v1,v2) {
     styles1 = v2.replace(/\s\s*/,' ').replace(/; /,';').split(';').sort();
 
 };
-
-module.exports = ElementCompare;
+if (!process.browser) {
+    module.exports = ElementCompare;
+}
