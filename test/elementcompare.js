@@ -3,7 +3,8 @@
 require('should');
 
 
-if (process.browser) {
+if (!process.browser) {
+    console.log('running in nodejs');
     let ElementCompare = require('../src/elementcompare');
 }
 
