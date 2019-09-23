@@ -7,6 +7,10 @@
 
 require('./browserlike');
 
+if(!process.browser){
+    let ElementCompare;  // if in Node, do not expose directly like in a browser
+}
+
 ElementCompare = function(e1,e2) {
     // HtmlCompare is a class that compare 2 Dom Element
     // e1 and e2 can either be:

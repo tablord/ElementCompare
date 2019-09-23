@@ -3,7 +3,7 @@
 require('should');
 
 
-if (!(window && window.ElementCompare)) {
+if (process.browser) {
     let ElementCompare = require('../src/elementcompare');
 }
 
