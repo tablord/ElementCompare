@@ -5,9 +5,10 @@
 // (CC-BY-SA 2019)Marc Nicole  according to https://creativecommons.org/
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-require('./browserlike');
+
 
 if(!process.browser){
+    require('./browserlike');
     let ElementCompare;  // if in Node, do not expose directly like in a browser
 }
 

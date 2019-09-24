@@ -1,10 +1,10 @@
 'use strict';
 
-require('should');
+
 
 
 if (!process.browser) {
-    console.log('running in nodejs');
+    require('should');
     let ElementCompare = require('../src/elementcompare');
 }
 
