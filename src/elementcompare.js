@@ -172,7 +172,7 @@ ElementCompare.normalizeCssAttr = function(css) {
     // normalize one css_attr:param1 param2...  (with or without ;)
     // the return css attr will have a trailling ;
     css = css.replace(/\s*,\s*/g,','); // suppress any space before or after , so that it will be considered as one word (like for font)
-    var av = css.match(/(\w+)\s*:\s*([^;]+)/);
+    const av = css.match(/(\w+)\s*:\s*([^;]+)/);
     return av[1]+':'+ElementCompare.normalizeClasses(av[2])+';';
 };
 
@@ -186,7 +186,7 @@ ElementCompare.normalizeStyle = function(style) {
 
 ElementCompare.styles = function(v1,v2) {
     // compare styles that are ; separated and within the style, like classes
-    var styles1, styles2;
+    var styles1, styles2; //TODO Bug !!!???
     styles1 = v1.replace(/\s\s*/,' ').replace(/; /,';').split(';').sort();
     styles1 = v2.replace(/\s\s*/,' ').replace(/; /,';').split(';').sort();
 
